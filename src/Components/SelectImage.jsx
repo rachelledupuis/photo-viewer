@@ -1,16 +1,12 @@
-import React, { useState } from "react";
-import { imageUrls } from "../ImagesUrls/Images"
+/* import React, { useState } from "react";
+import { imageUrls } from "../Images"
 
-export function SelectImage() {
-    const [currentImage, selectedImage] = useState("https://picsum.photos/id/623/1600/900.jpg");
+export function SelectImage({photoUrls, setCurrentPhotoUrl}) {
 
-    imageUrls.map((image) => {
     return (
         <div>
-            <h1 onClick={selectedImage(image)}>Image</h1>
-            {currentImage === image ? (
-                    <img src={image}/>
-                ) : null}
+            {currentImage}
+            <img onClick={getUrl}/>
         </div>
-    )})
-}
+    )
+} */
