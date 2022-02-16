@@ -1,11 +1,17 @@
-import React from "react";  // import React (to provide access to JSX)
-import './PhotoViewer.css'
+import React, { useState } from "react";
+import { LargeImage } from "../largeImage/LargeImage";
+import { ThumbnailImages } from "../thumbnailImages/ThumbnailImages";
+import { imageUrls } from "../../clients/getImageUrls";
 
-export function PhotoViewer(props) {    // declare and export new function called 'PhotoViewer'
-    //const [currentPhotoUrl, setCurrentPhotoUrl] = useState(imageUrls[0]);
-    return (                
-        <div className="photo-viewer">
-            <img src={props.src}/>
-        </div>
-    );
+export function PhotoViewer() {
+    const [currentPhotoUrl, setCurrentPhotoUrl] = useState(imageUrls[22]);
+
+    return (
+        <div>
+        <LargeImage currentPhotoUrl={currentPhotoUrl} />
+        <ThumbnailImages
+            setCurrentPhotoUrl={setCurrentPhotoUrl}
+        />
+    </div>
+    )
 }
