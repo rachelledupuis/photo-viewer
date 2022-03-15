@@ -8,10 +8,11 @@ export function PhotoViewer() {
 
     return (
         <div>
-        <LargeImage currentPhotoUrl={currentPhotoUrl} />
-        <ThumbnailImages
-            setCurrentPhotoUrl={setCurrentPhotoUrl}
-        />
-    </div>
+            <LargeImage currentPhotoUrl={currentPhotoUrl} />
+            <ThumbnailImages
+                images={imageUrls}
+                setCurrentPhotoUrl={setCurrentPhotoUrl}
+            />
+        </div>
     )
 }
