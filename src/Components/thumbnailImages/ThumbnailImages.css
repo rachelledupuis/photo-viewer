@@ -19,3 +19,27 @@
     vertical-align: middle;
     width: 100%;
   }
+
+ @media screen and (max-width: 1000px) {
+    .thumbnail {
+        -ms-flex: 25%;
+        flex: 25%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .thumbnail {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .thumbnail {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+}
