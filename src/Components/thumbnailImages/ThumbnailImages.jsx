@@ -3,7 +3,7 @@ import './ThumbnailImages.css'
 
 export function ThumbnailImages( {images, setCurrentPhotoUrl1, setCurrentPhotoUrl2} ) {
     const [clickCount, setClickCount] = useState(0);
-    
+
     return (
         <div className="thumbnail-container">                
             {images.map((image, index) => (

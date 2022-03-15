@@ -4,8 +4,8 @@ import './LargeImage.css'
 export function LargeImage({currentPhotoUrl1, currentPhotoUrl2}) {
     return (                
         <div className="photo-viewer-container">
-            <img src={currentPhotoUrl1}/>
-            <img src={currentPhotoUrl2}/>
+            <img className="photo" src={currentPhotoUrl1}/>
+            <img className="photo" src={currentPhotoUrl2}/>
         </div>
     );
 }
